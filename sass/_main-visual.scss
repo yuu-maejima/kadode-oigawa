@@ -1,0 +1,24 @@
+.main-visual {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/mainvisual1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .main-visual_content {
+        .main-visual_catch {
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            bottom: 15%;
+            transform: translateX(-50%);
+            font-size: 40px;
+
+            width: 80%;
+            text-align: center;
+
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.food {
+    padding: 80px 0;
+    margin-top: 80px;
+
+    width: 90%;
+    margin-right: auto;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border: 1px solid #000;
+
+    .food-title {
+        text-align: center;
+    }
+
+    .food-intro {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .food-shop {
+        margin-top: 40px;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 24px;
+                height: 1px;
+                background-color: #000;
+            }
+        }
+
+        .food-list {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+
+            .food-card {
+                width: 240px;
+
+                .food-card_img {
+                    width: 100%;
+                    height: 200px;
+                    background-color: #ddd;
+                    border-radius: 8px;
+                }
+
+                .food-card_body {
+                    padding: 16px;
+                }
+            }
+        }
+
+        .food-more {
+            margin-top: 24px;
+
+            .food-more_link {
+                border: 1px solid #000;
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 12px 40px;
+                border-radius: 9999px;
+
+                &::after {
+                    content: ">";
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+
+    .food-marche {
+        .food-marche_title {
+            margin-top: 64px;
+            text-align: center;
+        }
+
+        .food-marche_intro {
+            text-align: center;
+        }
+
+        .food-marche_slider {
+            margin-top: 24px;
+
+            width: 100vw;
+            margin-right: -10vw;
+            overflow: hidden;
+
+            .food-marche_track {
+                display: flex;
+            }
+
+            .food-marche_item {
+                flex-shrink: 0;
+                width: 240px;
+                height: 180px;
+                background-color: #ddd;
+                border: 1px solid #000;
+            }
+        }
+
+    }
+
+}

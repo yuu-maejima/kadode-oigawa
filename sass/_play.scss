@@ -1,0 +1,98 @@
+.play {
+    padding: 80px 0;
+    margin-top: 80px;
+
+    width: 90%;
+    margin-left: auto;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border: 1px solid #000;
+
+    .play-title {
+        text-align: center;
+    }
+
+    .play-logo {}
+
+    .play-intro {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .play-map {}
+
+    .play-news {
+        margin-top: 64px;
+
+        .news-title {
+            text-align: center;
+        }
+
+        .news-list {
+            width: 80%;
+            max-width: 800px;
+            margin: 32px auto 0;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .news-item {
+                border-bottom: 1px solid #ddd;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    padding: 16px;
+
+                    &::after {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+
+                        border-top: 1px solid #000;
+                        border-right: 1px solid #000;
+
+                        transform: rotate(45deg);
+
+                        margin-left: auto;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+
+            .news-img {
+                width: 80px;
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            .news-body {
+                flex: 1;
+
+                time {
+                    display: block;
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                }
+
+                p {
+                    // margin: 0;
+                }
+            }
+        }
+    }
+
+}
